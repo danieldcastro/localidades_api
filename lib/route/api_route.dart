@@ -3,6 +3,10 @@ import 'package:vania/vania.dart';
 import '../app/http/controllers/location_controller.dart';
 
 class ApiRoute implements Route {
+  final LocationController _locationController;
+
+  ApiRoute(this._locationController);
+
   @override
   void register() {
     /// Base RoutePrefix
@@ -10,12 +14,12 @@ class ApiRoute implements Route {
 
     Router.get(
       '/states',
-      LocationController().getStates,
+      _locationController.getStates,
     );
 
     Router.get(
       '/cities/{stateAcronym}',
-      LocationController().getCitiesByState,
+      _locationController.getCitiesByState,
     );
 
     // Router.get("/home", homeController.index);

@@ -1,6 +1,7 @@
 import 'package:vania/vania.dart';
 
 import '../app/providers/route_service_provider.dart';
+import '../app/service_locator.dart';
 import 'cors.dart';
 
 Map<String, dynamic> config = {
@@ -9,6 +10,6 @@ Map<String, dynamic> config = {
   'timezone': '',
   'cors': cors,
   'providers': <ServiceProvider>[
-    RouteServiceProvider(),
+    RouteServiceProvider(getIt()),
   ],
 };

@@ -3,7 +3,9 @@ import '../../models/state_model.dart';
 import '../datasource/location_brasil_api_datasource.dart';
 
 class LocationRepository {
-  final _locationApiDatasource = LocationBrasilApiDatasource();
+  final LocationBrasilApiDatasource _locationApiDatasource;
+
+  LocationRepository(this._locationApiDatasource);
 
   Future<List<StateModel>> getStates() {
     return _locationApiDatasource.getStates();
