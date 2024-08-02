@@ -1,5 +1,6 @@
-import 'package:localidades_api/route/api_route.dart';
 import 'package:vania/vania.dart';
+
+import '../../route/api_route.dart';
 
 class RouteServiceProvider extends ServiceProvider {
   @override

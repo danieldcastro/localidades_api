@@ -1,6 +1,6 @@
-import 'package:localidades_api/app/providers/route_service_provider.dart';
 import 'package:vania/vania.dart';
 
+import '../app/providers/route_service_provider.dart';
 import 'cors.dart';
 
 Map<String, dynamic> config = {

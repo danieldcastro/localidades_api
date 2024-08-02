@@ -1,0 +1,7 @@
+## Find all states
+http://localhost:8000/api/states
+Content-type: 'application/json'
+
+### Find cities in SP
+http://localhost:8000/api/cities/MG
+Content-type: 'application/json'
